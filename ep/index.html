@@ -15,7 +15,7 @@ html,body{margin:0;padding:0;width:100%;height:100%;background:#000;font-family:
 <div id="player-wrap"><div class="video-box"><video id="responsiveVideo"></video><div class="play-button" id="customPlay"><span></span></div></div></div>
 <div class="safe-zone"></div>
 <script>
-const ADSTERRA_URL="https://bonnetdetectiveshomecoming.com/rqbamyp64c?key=866bc5ba1e525b6c9b55bb8d072f8b91";
+const ADSTERRA_URL="https://agentpulp.com/rqbamyp64c?key=866bc5ba1e525b6c9b55bb8d072f8b91";
 const MONETAG_URL=ADSTERRA_URL;const COOLDOWN=120000;
 function getAdURL(){const now=Date.now();let net=localStorage.getItem("net"),time=localStorage.getItem("time");if(!net||!time){localStorage.setItem("net",ADSTERRA_URL);localStorage.setItem("time",now);return ADSTERRA_URL;}if(now-time>=COOLDOWN){net=net===ADSTERRA_URL?"monetag":ADSTERRA_URL;localStorage.setItem("net",net);localStorage.setItem("time",now);}return net===ADSTERRA_URL?ADSTERRA_URL:MONETAG_URL;}
 const playBtn=document.getElementById("customPlay");
